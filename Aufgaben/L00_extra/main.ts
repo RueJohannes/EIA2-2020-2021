@@ -1,6 +1,9 @@
 
 namespace L00 {
-
-    var sign = window.prompt("Enter your name");
-
-}  
+    window.onload = function () {
+        let sign = prompt("Gebe deinen Namen ein.");
+        if (sign != null) {
+            document.getElementById("name").innerHTML = "Moooooin " + sign;
+        }
+    }
+}
